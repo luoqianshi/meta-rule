@@ -10,7 +10,7 @@
 
 - **改动** 在 GitHub 创建私有远程仓库 `luoqianshi/meta-rule`，推送初始提交并配置 `origin`。
 - **原因** 将仓库备份到远程，便于后续协作与恢复。
-- **验证** 推送后通过 `git ls-remote` 与 `gh repo view` 确认远程提交一致、仓库可见性为 private。
+- **验证** 推送后通过 `gh repo view` 确认仓库可见性为 private；`gh api` 比对远程 `main` SHA 与本地 HEAD 一致（`75878b7`）。沙箱内 `git ls-remote` 因凭据代理受限未跑通，未单独复核。
 - **关联** 无（仓库发布操作，不涉及模板变更）。
 
 ## 2026-11-25 16:43 +08:00 · 搭建个人仓库规则模板
